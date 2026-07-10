@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'TAN Pearl';
+  src: url('/TAN-PEARL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Iskry Two';
+  src: url('/iskry-two-test.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+:root {
+  /* --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif; */
+   --font-mono: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'TAN Pearl', Georgia, serif; /* or 'Iskry Two' */
+  --font-sans: 'Manrope', system-ui, sans-serif;
+  --font-accent: 'Iskry Two', Georgia, serif; 
+  --color-accent: #CB8530;
+  --color-accent-gold: #d4991f;
+  --color-primary-dark: #1a1208;
+  --color-cream: #f7ede0;
+  --color-card: #fdf6ee;
+  --color-secondary: #f2e5d4;
+  --color-muted: #777777;
+  --color-border: rgba(0, 0, 0, 0.12);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 
+html {
+  scroll-behavior: smooth;
+} */
+
+body {
+  background-color: #f7ede0;
+  color: #111111;
+  /* font-family: 'Inter', system-ui, sans-serif; */
+  font-family: 'Manrope', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.04em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to   { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to   { height: 0; }
+}
+/* 
+@media (max-width: 768px) {
+  .hidden-mobile { display: none !important; }
+}
+@media (min-width: 769px) {
+  .show-mobile { display: none !important; }
+}
+
+@media (max-width: 768px) {
+  .credibility-quote {
+    position: static !important;
+    margin-top: 1rem;
+    max-width: 100% !important;
+  }
+} */
+
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  
+  .credibility-quote {
+    position: static !important;
+    margin-top: 1rem;
+    max-width: 100% !important;
+  }
+}
+
+/* Header responsive visibility */
+.hidden-mobile {
+  display: flex;
+}
+
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 1342px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .show-mobile {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-brand { grid-column: span 1 !important; }
+}
+
+
+/* FAQ animations */
+.faq-content[data-state="open"] {
+  animation: accordion-down 0.25s ease;
+}
+.faq-content[data-state="closed"] {
+  animation: accordion-up 0.25s ease;
+}
+
+/* Chevron rotation when open */
+.faq-trigger[data-state="open"] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Question color when open */
+.faq-trigger[data-state="open"] .faq-question {
+  color: #CB8530;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200, 1fr));
+  gap: 1.5rem;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(100, 1fr));
+  }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  align-items: end;
+}
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .stats-grid h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 2.5rem 1.5rem !important;
+  }
+}
+
+.hero-text{
+     line-height: 1.18;
+  }
+
+.hero-desktop {
+  display: block;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .hero-desktop {
+    display: none;
+  }
+
+  .hero-mobile {
+    display: block;
+  }
+
+  .logo-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+@media (max-width: 430px) {
+   .hero-text{
+     line-height: 1.28;
+  }
+}
