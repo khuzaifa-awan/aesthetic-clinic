@@ -29,7 +29,7 @@ export const business = {
 
 export const trustBarItems = [
   { label: "Treatments Performed", value: "1,452+" },
-  { label: "Google Rating", value: "5.0 ★" },
+  { label: "Google Rating", value: "4.8 ★" },
   { label: "Years of Excellence", value: "11" },
   { label: "DHA Licensed", value: "Clinic" },
   { label: "Physician-Led", value: "Always" },

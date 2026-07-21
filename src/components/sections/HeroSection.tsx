@@ -356,7 +356,7 @@ export default function HeroSection() {
             }}
           >
             {/* Aesthetic & Dermatology Clinic · Lahore */}
-            Aesthetic & Dermatology Clinic
+            Aesthetic & Wellness Clinic
           </p>
 
           <h1

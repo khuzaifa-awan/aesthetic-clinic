@@ -36,7 +36,7 @@ export default function CredibilitySection() {
         {/* Left */}
         <div>
           <SectionLabel>
-            Why <i style={{ fontWeight: "black" }}>Aesthetics</i>, Not Any
+            Why <i style={{ fontWeight: "black" }}>French Medical</i>, Not Any
             Clinic
           </SectionLabel>
           <h2
@@ -200,6 +200,7 @@ export default function CredibilitySection() {
                 color: "#CB8530",
               }}
             >
+              {/* Dr. Nour Al-Hassan · Lead Physician */}
               Dr. Nour Al-Hassan · Lead Physician
             </footer>
           </blockquote>

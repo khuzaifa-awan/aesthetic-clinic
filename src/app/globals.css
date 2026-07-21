@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .logo-img {
-    width: 100px;
+    width:100px;
     height: 100px;
   }
 }
@@ -219,4 +219,13 @@ h1, h2, h3, h4, h5, h6 {
    .hero-text{
      line-height: 1.28;
   }
+}
+
+
+/* Safety net — GSAP overrides these, but if it fails elements stay visible */
+.t-card-wrap,
+.team-eyebrow,
+.team-h2,
+.team-desc {
+  opacity: 1;
 }

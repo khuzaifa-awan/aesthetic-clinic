@@ -123,7 +123,7 @@ export default function Header() {
         left: 0,
         right: 0,
         zIndex: 50,
-      }} 
+      }}
     >
       <div
         style={{
@@ -139,9 +139,9 @@ export default function Header() {
         {/* Logo */}
         <div ref={logoRef} style={{ flexShrink: 0, opacity: 0, zIndex: 60 }}>
           <Image
-            src="/images/41.png"
+            src="/images/37.png"
             alt="Aesthetics"
-            width={150}
+            width={140}
             height={68}
             className="logo-img"
             style={{ objectFit: "contain", display: "block" }}

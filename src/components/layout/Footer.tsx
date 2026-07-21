@@ -208,7 +208,7 @@ export default function Footer() {
           <div style={{ gridColumn: "span 2" }} className="footer-brand">
             <div style={{ marginBottom: "0.75rem" }}>
               <Image
-                src="/images/4.png"
+                src="/images/37.png"
                 alt="Aesthetics"
                 width={120}
                 height={45}
@@ -229,8 +229,7 @@ export default function Footer() {
                 marginBottom: "1.25rem",
               }}
             >
-              Physician-led aesthetic medicine in Lahore. Natural results,
-              always.
+              Physician-led aesthetic medicine. Natural results, always.
             </p>
             <div style={{ display: "flex", gap: "0.75rem" }}>
               {[
@@ -340,7 +339,7 @@ export default function Footer() {
               >
                 <MapPin size={12} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span>
-                  Lake City, Lahore
+                  Islamabad
                   <br />
                   Pakistan
                 </span>
@@ -359,7 +358,7 @@ export default function Footer() {
                   href="tel:+97140000000"
                   style={{ color: "inherit", textDecoration: "none" }}
                 >
-                  +971 4 000 0000
+                  +92 300 000 0000
                 </a>
               </div>
               <div
@@ -403,7 +402,7 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: "0.81rem", color: "rgba(247,237,224,0.95)" }}>
-            © {new Date().getFullYear()} Aesthetics · All rights reserved ·
+            © {new Date().getFullYear()} French Medical · All rights reserved ·
             Designed and Developed by{" "}
             <a
               href="https://wa.me/923215745745"

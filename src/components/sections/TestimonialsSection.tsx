@@ -144,12 +144,12 @@ export default function TestimonialsSection() {
               color: "#111111",
             }}
           >
-            5/5
+            4.8/5
           </span>
-          {/* <span style={{ fontSize: "0.875rem", color: "#777777" }}>· 312 verified Google Reviews</span> */}
-          <span style={{ fontSize: "0.875rem", color: "#777777" }}>
+          <span style={{ fontSize: "0.875rem", color: "#777777" }}>· 526 verified Google Reviews</span>
+          {/* <span style={{ fontSize: "0.875rem", color: "#777777" }}>
             verified Google Reviews
-          </span>
+          </span> */}
         </div>
       </div>
     </section>
